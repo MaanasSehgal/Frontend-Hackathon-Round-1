@@ -1,11 +1,9 @@
-
 gsap.to(".loader", {
     duration: 2,
     height: "0",
     top: "100%",
     ease: "Expo.easeInOut",
 });
-
 
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
@@ -32,3 +30,27 @@ function scrollToId(event, id, scrollAmount) {
     });
 }
 
+gsap.to(".swiper", {
+    x: "+=100",
+    scrollTrigger: {
+        trigger: "body",
+        start: "top top",
+        end: "bottom bottom",
+        scrub: true,
+    },
+});
+
+video.addEventListener("click", () => {
+    video.currentTime = 0;
+    video.play();
+    video.muted = false;
+    if (video.requestFullscreen) {
+        video.requestFullscreen();
+    } else if (video.mozRequestFullScreen) {
+        video.mozRequestFullScreen();
+    } else if (video.webkitRequestFullscreen) {
+        video.webkitRequestFullscreen();
+    } else if (video.msRequestFullscreen) {
+        video.msRequestFullscreen();
+    }
+});
