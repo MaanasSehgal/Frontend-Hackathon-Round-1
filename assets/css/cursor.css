@@ -19,9 +19,8 @@
 .hover-this:hover ~ .cursor {
     transform: scale(0.5);
     background-color: white;
-    
 }
 
-.hover-this:hover ~ .cursor-inner {
+/* .hover-this:hover ~ .cursor-inner {
     background-color: black;
-}
+} */
