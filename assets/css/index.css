@@ -4,6 +4,15 @@
     box-sizing: border-box;
     color: #15151a;
     cursor: none;
+    scroll-behavior: smooth;
+}
+
+.loader {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 4000;
+    background-color: black;
 }
 
 body {
@@ -19,6 +28,10 @@ nav {
     align-items: center;
     justify-content: space-between;
     padding: 2rem;
+}
+
+.tm {
+    font-size: 0.4rem;
 }
 
 .link-button {
@@ -45,14 +58,16 @@ nav {
     width: 140px;
     height: 55px;
     border-radius: 100px 100px 100px 100px;
+    margin-right: -1px;
+    border: none;
     /* padding: 0.5rem 0.5rem; */
 }
 .title {
     font-size: 2.2rem;
 }
 
-.plus{
-    font-weight: ;
+.plus {
+    font-size: 1.8rem;
 }
 
 .tabs-container {
@@ -60,16 +75,23 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    font-size: 1.2rem;
+}
+
+.nav-buttons {
+    display: flex;
+    justify-content: flex-start;
 }
 
 .title-container {
-    width: 40%;
+    width: 50%;
 }
 
 .link-button {
     border-radius: 50%;
     width: 50px;
     height: 50px;
+    border: none;
 }
 
 .color-black {
@@ -96,6 +118,8 @@ nav {
     width: 40%;
     height: 5rem;
     padding: 15px;
+    font-size: 0.9rem;
+    padding-left: 20px;
 }
 
 .fixed-div-inner {
@@ -133,6 +157,12 @@ nav {
     margin-top: 15px;
 }
 
+.playfair-display-font {
+    font-family: "Playfair Display", serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
 .translated-text {
     transform: translateY(-50%) rotate(-90deg);
     transform-origin: center;
@@ -145,7 +175,7 @@ nav {
     position: absolute;
     right: 0;
     width: 50%;
-    height: 100vh;
+    height: 90vh;
     overflow: hidden;
 }
 
@@ -195,7 +225,7 @@ nav {
 #moving-text h1 {
     font-size: 15vw;
     display: inline-block;
-    font-family: "Titillium Web", sans-serif;
+    font-family: "twk-everett-updated", sans-serif;
     /* color: black; */
 }
 
@@ -224,6 +254,10 @@ nav {
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
+.top-box a {
+    font-size: 1rem;
+}
+
 #page3 {
     width: 100%;
     min-height: 25vh;
@@ -235,23 +269,16 @@ nav {
 }
 
 .element {
+    font-size: 1.6rem;
     width: 100%;
     height: 150px;
-    border-bottom: 1px solid #8a8787;
-    overflow: hidden;
     position: relative;
     display: flex;
     align-items: center;
-}
+    font-family: "Playfair Display", serif;
 
-/* .element h2 {
-    font-size: 4vw;
-    line-height: 3vw;
-    width: 50%;
-    font-weight: 100;
-    position: relative;
-    z-index: 9;
-} */
+    font-weight: lighter;
+}
 
 .bottom-container {
     display: flex;
@@ -263,11 +290,18 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: "Titillium Web", sans-serif;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
     font-size: 15vw;
 }
 
-.border-wrap {
-    border: 2px solid #15151a;
-    border-radius: 20%;
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateY(-100%);
+    transition: all 0.7s;
+}
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
 }

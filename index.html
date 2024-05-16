@@ -13,15 +13,24 @@
             crossorigin="anonymous"
             referrerpolicy="no-referrer"
         />
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet" />
     </head>
     <body>
+        <div class="loader"></div>
+        <div class="loco">
         <header>
             <nav>
                 <div class="title-container">
-                    <span class="title">Show <span class="plus">+</span>Tell&trade;</span>
+                    <span class="title">Show <span class="plus">+</span>Tell<span class="tm">TM</span></span>
                 </div>
 
                 <div class="tabs-container">
@@ -31,17 +40,19 @@
                     <span class="hover-this">Sectors</span>
                     <span class="hover-this">Insights</span>
                     <span class="hover-this">Careers</span>
+                    
                     <div class="cursor">
                         <div class="cursor-inner"></div>
                     </div>
+                    <div class="nav-buttons">
+                        <button class="hover-this text-white color-black start-button">Start a project</button>
 
-                    <button class="hover-this text-white color-black start-button">Start a project</button>
-
-                    <button class="color-black link-button">
-                        <svg class="transform-svg text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" fill="currentColor">
-                            <path class="svg-path" d="M142.147 472.846 567.912 47.081 520.831 0 20.603 500.228 544.372 1024l47.081-47.086-437.489-437.486h849.431v-66.581H142.148z"></path>
-                        </svg>
-                    </button>
+                        <button class="color-black link-button">
+                            <svg class="transform-svg text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" fill="currentColor">
+                                <path class="svg-path" d="M142.147 472.846 567.912 47.081 520.831 0 20.603 500.228 544.372 1024l47.081-47.086-437.489-437.486h849.431v-66.581H142.148z"></path>
+                            </svg>
+                        </button>
+                    </div>
                 </div>
             </nav>
         </header>
@@ -65,7 +76,7 @@
 
         <main>
             <div class="video-container">
-                <video muted loop>
+                <video autoplay muted loop>
                     <source src="/public/video/background-video.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>
@@ -73,15 +84,15 @@
             <!-- -----------------------Moving Text------------------------------------ -->
             <div id="moving-text">
                 <div class="con">
-                    <h1>We make every interaction count</h1>
+                    <h1 class="playfair-display-font">We make every interaction count</h1>
                     <div id="gola"></div>
                 </div>
                 <div class="con">
-                    <h1>We make every interaction count</h1>
+                    <h1 class="playfair-display-font">We make every interaction count</h1>
                     <div id="gola"></div>
                 </div>
                 <div class="con">
-                    <h1>We make every interaction count</h1>
+                    <h1 class="playfair-display-font">We make every interaction count</h1>
                     <div id="gola"></div>
                 </div>
             </div>
@@ -89,23 +100,26 @@
             <div class="top-box">
                 A digital-first branding & web product <br />agency expertly creating impactful <br />
                 experiences for high-growth brands
+                <br />
+                <a href="#" onclick="scrollToId(event, 'work-div', 50)">Scroll + explore</a>
             </div>
+
             <!-- --------------------Page 3------------------------------------ -->
             <div id="page3">
-                <div id="elem-container">
+                <div id="elem-container hidden">
                     <div class="element">
-                        <h2>
+                        <h1 data-scroll data-scroll-speed="1">
                             Show + Tell is a <span class="border-wrap">digital-first</span> branding and technology <br />
                             agency, enabling companies to connect with their <br />
-                            audience, extend their reach and enjoy greater <br>
+                            audience, extend their reach and enjoy greater <br />
                             <span class="border-wrap">COMMERCIAL</span> success
-                        </h2>
+                        </h1>
                     </div>
                 </div>
             </div>
 
             <div class="bottom-container">
-                <div class="work-div">Work</div>
+                <div id="work-div" class="work-div hidden">Work</div>
                 <div>
                     <button class="hover-this text-white color-black start-button">View All</button>
 
@@ -116,9 +130,23 @@
                     </button>
                 </div>
             </div>
+            
+Embracing the Digital Age: Optinet's Quest for <br>
+brand & digital Transformation
+
+Digital transformation for a leading office and <br>
+interior company
+
+Transforming Intellectual Property Management <br>
+through Cutting-Edge Digital Innovation
+
+Pioneering Pathways: Atlas Venture's Digital Evolution in Biotech
         </main>
 
+        
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
         <script src="/assets/js/index.js"></script>
         <script src="/assets/js/cursor.js"></script>
+    </div>
     </body>
 </html>
