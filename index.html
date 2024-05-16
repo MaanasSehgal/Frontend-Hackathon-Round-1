@@ -1,13 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/assets/css/index.css">
-</head>
-<body>
-    
-    <script src="/assets/js/index.js"></script>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="/assets/css/index.css" />
+        <link rel="stylesheet" href="/assets/css/cursor.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+            integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="title-container">
+                    <span class="title">Show <span class="+">+</span>Tell&trade;</span>
+                </div>
+
+                <div class="tabs-container">
+                    <span class="hover-this">Work</span>
+                    <span class="hover-this">Studio</span>
+                    <span class="hover-this">Services</span>
+                    <span class="hover-this">Sectors</span>
+                    <span class="hover-this">Insights</span>
+                    <span class="hover-this">Careers</span>
+                    <div class="cursor">
+                        <div class="cursor-inner"></div>
+                    </div>
+
+                    <button class="hover-this text-white color-black start-button">Start a project</button>
+
+                    <button class="color-black link-button">
+                        <svg class="transform-svg text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" fill="currentColor">
+                            <path class="svg-path" d="M142.147 472.846 567.912 47.081 520.831 0 20.603 500.228 544.372 1024l47.081-47.086-437.489-437.486h849.431v-66.581H142.148z"></path>
+                        </svg>
+                    </button>
+                </div>
+            </nav>
+        </header>
+
+        <div class="right-fixed-div text-white">
+            <div class="w">W</div>
+            <div class="translated-text">Honors</div>
+        </div>
+
+        <div class="color-black fixed-div">
+            <p class="text-white">We use <span class="text-white underline">cookies</span> to give you the best experiences</p>
+            <div class="fixed-div-inner">
+                <button class="accept-cookies-button">Accept cookies</button>
+                <button class="color-white link-button">
+                    <svg class="transform-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" fill="currentColor">
+                        <path class="svg-path-2" d="M142.147 472.846 567.912 47.081 520.831 0 20.603 500.228 544.372 1024l47.081-47.086-437.489-437.486h849.431v-66.581H142.148z"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <main>
+            <div class="video-container">
+                <video muted loop>
+                    <source src="/public/video/background-video.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <!-- -----------------------Moving Text------------------------------------ -->
+            <div id="moving-text">
+                <div class="con">
+                    <h1>We make every interaction count</h1>
+                    <div id="gola"></div>
+                    
+                </div>
+                <div class="con">
+                    <h1>We make every interaction count</h1>
+                    <div id="gola"></div>
+                </div>
+                <div class="con">
+                    <h1>We make every interaction count</h1>
+                    <div id="gola"></div>
+                </div>
+            </div>
+            
+            <div>
+                A digital-first branding & web product <br />agency expertly creating impactful <br />
+                experiences for high-growth brands
+            </div>
+        </main>
+
+        <footer></footer>
+
+        <script src="/assets/js/index.js"></script>
+        <script src="/assets/js/cursor.js"></script>
+    </body>
 </html>
