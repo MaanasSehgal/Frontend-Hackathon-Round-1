@@ -1,3 +1,8 @@
+const scroll = new LocomotiveScroll({
+    el: document.querySelector("#smooth-scroll"),
+    smooth: true,
+});
+
 gsap.to(".loader", {
     duration: 2,
     height: "0",

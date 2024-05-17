@@ -229,15 +229,6 @@ nav {
     /* color: black; */
 }
 
-#gola {
-    height: 70px;
-    width: 70px;
-    border-radius: 50%;
-    background-color: black;
-    display: inline-block;
-    margin: 1vw 2vw;
-}
-
 @keyframes move {
     from {
         transform: translateX(0);
