@@ -85,6 +85,13 @@ nav {
 
 .title-container {
     width: 50%;
+    text-decoration: none;
+}
+
+.title-container:hover,
+.hover-this:hover {
+    text-decoration: underline;
+    text-underline-offset: 4px;
 }
 
 .link-button {
@@ -157,12 +164,6 @@ nav {
     margin-top: 15px;
 }
 
-.playfair-display-font {
-    font-family: "Playfair Display", serif;
-    font-weight: 300;
-    font-style: normal;
-}
-
 .translated-text {
     transform: translateY(-50%) rotate(-90deg);
     transform-origin: center;
@@ -221,11 +222,22 @@ nav {
     mix-blend-mode: multiply;
     color: black;
 }
+/* light */
+@font-face {
+    font-family: "TWKEverett-Light";
+    src: url("../fonts/TWKEverett-Light.otf");
+}
+
+/* thin */
+@font-face {
+    font-family: "TWKEverett-Thin";
+    src: url("../fonts/TWKEverett-Thin.otf");
+}
 
 #moving-text h1 {
     font-size: 15vw;
     display: inline-block;
-    font-family: "twk-everett-updated", sans-serif;
+    font-family: "TWKEverett-Thin";
     /* color: black; */
 }
 
@@ -281,7 +293,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-family: "TWKEverett-Light";
     font-size: 15vw;
 }
 
